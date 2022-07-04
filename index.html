@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather on your way</title>
+    <link rel="icon" href="assests/Favicon/weather-fav-icon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    
+</head>
+<body style="background: url(https://source.unsplash.com/1500x1000/?delhi);background-repeat: initial;background-attachment:fixed;"> 
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+
+            <div class="col-md-10 col-sm-10 col-lg-4 m-4">
+                <div class="card text-white text-center border-0">
+                    <img class="card-img" src="https://source.unsplash.com/600x900/?nature,water" width="600px" height="500px" alt="Card image">
+                    <div class="card-img-overlay">
+                    <form action="">
+                        <div class="input-group mb-3 w-75 mx-auto">
+                            <input type="search" class="form-control" placeholder="Search by City" aria-label="Search" aria-describedby="basic-addon2" id="entered_city">
+                            <div class="input-group-append">
+                              <div type="submit" class="input-group-text" id="basic-addon2" style="height: 40px;" id="submit_button" onclick="fetch_data()"><i class="fa fa-search fa 4x"></i></div>
+                            </div>
+                          </div>
+                    </form>
+                    <div class="bg-dark bg-opacity-50 py-3">
+                      <h2 class="card-title" id="city">New Delhi</h2>
+                      <p class="card-text lead" id="date">Monday&nbsp;|&nbsp;4/July/2022</p>
+                      <hr>
+                      <i class="fas fa-cloud fa 4x sky" ></i>
+                      <h2 id="current_temperature">30&deg;C</h2>
+                      <p class="lead fw-bolder mb-0 sky" >Cloud</p>
+                      <p class="lead" id="min-max-temp">29.03 &deg;C | 32.43 &deg;C </p>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-sm-10 col-lg-4 m-4">
+                <div class="card text-white text-center border-0">
+                    <img class="card-img" src="https://source.unsplash.com/600x900/?atmosphere" width="600px" height="500px" alt="Card image">
+                    <div class="card-img-overlay">
+                    
+                    <div class="bg-dark bg-opacity-50 py-3">
+                        <br><br><br>
+                      <h2 class="card-title" id="city">Atmosphere</h2>
+                      
+                      <p class="card-text lead" id="feels" >Feels Like : 29&deg;C</p>
+                      <hr>
+                      <i class="fas fa-cloud fa 4x" ></i>
+                      <p class="lead fw-bolder mb-0" id="windspeed">Wind Speed : 20 m/s</p>
+                      <p class="lead" id="pressure">Pressure : 21 hPa</p>
+                      <p class="lead" id="humidity">Humidity : 21 %</p>
+                    </div>
+                    
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-md-10 col-sm-10 col-lg-4 m-4">
+                <div class="card text-white text-center border-0">
+                    <img class="card-img" src="https://source.unsplash.com/600x900/?sunrise,sunset" width="600px" height="500px" alt="Card image">
+                    <div class="card-img-overlay">
+                    <div class="bg-dark bg-opacity-50 py-3">
+                        <br><br><br>
+                        <h2 class="card-title" id="city">Timings</h2>
+                        <span>Current Time</span>
+                      <p class="card-text lead" id="date"><span id="hrs">20</span>:<span id="min">39</span>:<span id="sec">35</span></p>
+                      <hr>
+                      <i class="fas fa-cloud fa 4x sky" ></i>
+                      <p class="lead" id="sunrise">Sunrise : </p>
+                      <p class="lead" id="sunset">Sunset :  </p>
+                    </div>
+                    
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
